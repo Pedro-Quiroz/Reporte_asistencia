@@ -1,0 +1,167 @@
+[
+    {
+      "id": 1,
+      "nombre": "Pedro Quiroz",
+      "fecha": "2025-04-07",
+      "hora_ingreso_1": "08:02",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": "15:03",
+      "hora_salida_2": "18:01"
+    },
+    {
+      "id": 1,
+      "nombre": "Pedro Quiroz",
+      "fecha": "2025-04-08",
+      "hora_ingreso_1": "07:55",
+      "hora_salida_1": "13:05",
+      "hora_ingreso_2": "15:00",
+      "hora_salida_2": "17:59"
+    },
+    {
+      "id": 1,
+      "nombre": "Pedro Quiroz",
+      "fecha": "2025-04-09",
+      "hora_ingreso_1": "08:10",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": "15:05",
+      "hora_salida_2": "18:00"
+    },
+    {
+      "id": 1,
+      "nombre": "Pedro Quiroz",
+      "fecha": "2025-04-10",
+      "hora_ingreso_1": "08:00",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": "15:10",
+      "hora_salida_2": "18:03"
+    },
+    {
+      "id": 1,
+      "nombre": "Pedro Quiroz",
+      "fecha": "2025-04-11",
+      "hora_ingreso_1": "08:03",
+      "hora_salida_1": "13:01",
+      "hora_ingreso_2": "15:01",
+      "hora_salida_2": "18:00"
+    },
+    {
+      "id": 1,
+      "nombre": "Pedro Quiroz",
+      "fecha": "2025-04-12",
+      "hora_ingreso_1": "09:01",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": null,
+      "hora_salida_2": null
+    },
+  
+    {
+      "id": 2,
+      "nombre": "Hans Gómez",
+      "fecha": "2025-04-07",
+      "hora_ingreso_1": "08:04",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": "15:06",
+      "hora_salida_2": "18:00"
+    },
+    {
+      "id": 2,
+      "nombre": "Hans Gómez",
+      "fecha": "2025-04-08",
+      "hora_ingreso_1": "08:00",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": "14:58",
+      "hora_salida_2": "18:01"
+    },
+    {
+      "id": 2,
+      "nombre": "Hans Gómez",
+      "fecha": "2025-04-09",
+      "hora_ingreso_1": "07:59",
+      "hora_salida_1": "13:02",
+      "hora_ingreso_2": "15:00",
+      "hora_salida_2": "18:04"
+    },
+    {
+      "id": 2,
+      "nombre": "Hans Gómez",
+      "fecha": "2025-04-10",
+      "hora_ingreso_1": "08:06",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": "15:02",
+      "hora_salida_2": "17:57"
+    },
+    {
+      "id": 2,
+      "nombre": "Hans Gómez",
+      "fecha": "2025-04-11",
+      "hora_ingreso_1": "08:08",
+      "hora_salida_1": "12:58",
+      "hora_ingreso_2": "15:01",
+      "hora_salida_2": "18:00"
+    },
+    {
+      "id": 2,
+      "nombre": "Hans Gómez",
+      "fecha": "2025-04-12",
+      "hora_ingreso_1": "09:05",
+      "hora_salida_1": "13:02",
+      "hora_ingreso_2": null,
+      "hora_salida_2": null
+    },
+  
+    {
+      "id": 3,
+      "nombre": "Luz Sánchez",
+      "fecha": "2025-04-07",
+      "hora_ingreso_1": "08:00",
+      "hora_salida_1": "13:03",
+      "hora_ingreso_2": "15:01",
+      "hora_salida_2": "18:00"
+    },
+    {
+      "id": 3,
+      "nombre": "Luz Sánchez",
+      "fecha": "2025-04-08",
+      "hora_ingreso_1": "08:02",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": "15:00",
+      "hora_salida_2": "18:10"
+    },
+    {
+      "id": 3,
+      "nombre": "Luz Sánchez",
+      "fecha": "2025-04-09",
+      "hora_ingreso_1": "07:57",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": "15:00",
+      "hora_salida_2": "17:58"
+    },
+    {
+      "id": 3,
+      "nombre": "Luz Sánchez",
+      "fecha": "2025-04-10",
+      "hora_ingreso_1": "08:05",
+      "hora_salida_1": "13:02",
+      "hora_ingreso_2": "15:00",
+      "hora_salida_2": "18:03"
+    },
+    {
+      "id": 3,
+      "nombre": "Luz Sánchez",
+      "fecha": "2025-04-11",
+      "hora_ingreso_1": "08:04",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": "15:00",
+      "hora_salida_2": "18:01"
+    },
+    {
+      "id": 3,
+      "nombre": "Luz Sánchez",
+      "fecha": "2025-04-12",
+      "hora_ingreso_1": "09:02",
+      "hora_salida_1": "13:00",
+      "hora_ingreso_2": null,
+      "hora_salida_2": null
+    }
+  ]
+  
