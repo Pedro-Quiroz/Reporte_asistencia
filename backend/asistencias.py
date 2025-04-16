@@ -1,6 +1,10 @@
 import json
 from datetime import datetime
 import pandas as pd
+import os
+import shutil
+from pathlib import Path
+
 
 def leer_datos_json(ruta_archivo):
     with open(ruta_archivo, 'r', encoding='utf-8') as f:
@@ -43,4 +47,16 @@ def procesar_asistencias(data, fecha_inicio, fecha_fin):
 
     # Convertir a DataFrame
     df = pd.DataFrame(list(tardanzas.items()), columns=["Empleado", "Minutos de Tardanza"])
+    df.to_excel("reporte_tardanza.xlsx", index=False)
     return df
+
+def descarga():
+    # Ruta al directorio de Descargas de tu usuario de Windows (adaptar tu nombre de usuario si es distinto)
+    ruta_windows = Path("/mnt/c/Users/pedro/Downloads/reporte_tardanza.xlsx")
+
+    try:
+        shutil.copy("reporte_tardanza.xlsx", ruta_windows)
+        print(f"✅ Archivo guardado correctamente en: {ruta_windows}")
+    except Exception as e:
+        print("❌ Error al mover el archivo:", e)
+     

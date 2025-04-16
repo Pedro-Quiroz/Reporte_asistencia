@@ -1,9 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
-from backend.asistencias import leer_datos_json, procesar_asistencias
+from backend.asistencias import leer_datos_json, procesar_asistencias, descarga
 
 tree = None
-
+boton_descarga = None
 # Configuración de la ventana
 ventana = tk.Tk()
 ventana.title("Empresa de Servicios S.A.C.")
@@ -32,12 +32,10 @@ entrada_fin.grid(row=1, column=1, padx=5, pady=5)
 #frame para resultados
 frame_resultados = tk.Frame(ventana)
 frame_resultados.pack(pady=10)
-
-
-
 # Boton de reporte
 def generar_reporte():
     global tree
+    global boton_descarga
     fecha_inicio = entrada_inicio.get()
     fecha_fin = entrada_fin.get()
     try:
@@ -46,7 +44,8 @@ def generar_reporte():
 
         if tree:
             tree.destroy()
-        
+        if boton_descarga:
+            boton_descarga.destroy()
         cantidad_filas = len(df_resultado)
         tree = ttk.Treeview(frame_resultados, columns=("Empleado", "Minutos"), show="headings", height=max(cantidad_filas,1))
         tree.heading("Empleado", text="Empleado")
@@ -57,8 +56,9 @@ def generar_reporte():
 
         for _, fila in df_resultado.iterrows():
             tree.insert("", "end", values=(fila["Empleado"], fila["Minutos de Tardanza"]))
-        
 
+        boton_descarga = tk.Button(frame_resultados, text="Descargar", command=descarga)
+        boton_descarga.pack(pady=10)
 
     except Exception as e:
         print("Ocurrió un error:", e)
