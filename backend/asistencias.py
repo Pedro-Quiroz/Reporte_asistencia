@@ -51,12 +51,14 @@ def procesar_asistencias(data, fecha_inicio, fecha_fin):
     return df
 
 def descarga():
-    # Ruta al directorio de Descargas de tu usuario de Windows (adaptar tu nombre de usuario si es distinto)
-    ruta_windows = Path("/mnt/c/Users/pedro/Downloads/reporte_tardanza.xlsx")
+    # Ruta de la carpeta Descargas del usuario actual en Windows
+    carpeta_descargas = Path(os.path.expanduser("~")) / "Downloads"
+    archivo_origen = Path("reporte_tardanza.xlsx")
+    destino = carpeta_descargas / archivo_origen.name
 
     try:
-        shutil.copy("reporte_tardanza.xlsx", ruta_windows)
-        print(f"✅ Archivo guardado correctamente en: {ruta_windows}")
+        shutil.copy(archivo_origen, destino)
+        print(f"✅ El archivo se ha guardado correctamente en: {destino}")
     except Exception as e:
-        print("❌ Error al mover el archivo:", e)
+        print(f"❌ Error al guardar el archivo en Descargas: {e}")
      
